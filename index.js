@@ -36,7 +36,7 @@ function getWeatherByLocation(position) {
         $(".hum").html(`<p>Humidity: ${data.main.humidity}%</p>`)
         $(".speed").html(`<p>Wind Speed: ${data.wind.speed}m/s</p>`)
         // $("#weather-info").html(weatherInfo);
-        $(".card").css({"background-image":`url("./images/${data.weather[0].description}.jpg")`, "background-repeat":"no-repeat", "background-size":"contain"});
+        $(".card").css({"background-image":`url("./images/${data.weather[0].description}.jpg")`, "background-repeat":"no-repeat", "background-size":"cover"});
         
     })
     .catch(error => {

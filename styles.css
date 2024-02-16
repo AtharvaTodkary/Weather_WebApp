@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+header{
+    color: white;
+    background-color: black;
+    height: 12vh;
+    width: 100%;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+header nav h2{
+    padding: 4vh 20vh;
+}
+header nav .pfp{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    margin: 2vh 10vh;
+    background-image: url("./images/IMG-20231211-WA0314.jpg");
+    background-repeat: no-repeat;
+    background-size: 16vh;
+    background-position: center;
+}
+.main{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, #a2a8e9 20%, #d37676);
+}
+.main .card{
+    border: 5px solid black;
+    height: 95vh;
+    width: 63%;
+    align-self: center;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    box-shadow: -20px 20px 30px black;
+}
+.card .top-header{
+    height: 40vh;
+    width: 100%;
+    margin-top: 3vh;
+    display: flex;
+}
+.top-lft, .top-rgt{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.top-lft .city{
+    width: 100%;
+    height: 50%;
+    margin-top: 13%;
+}
+.city>p{
+    margin-top: 5vh;
+    font-size: 40px;
+    text-align: center;
+}
+.top-rgt .temp{
+    width: 90%;
+    height: 100%;
+    margin-right: 5%;
+}
+.temp>p{
+    margin-top: 10vh;
+    font-size: 80px;
+    text-align: center;
+}
+.weather-info{
+    height: 35vh;
+    display: flex;
+    width: 100%;
+    margin-top: 5vh;
+}
+.bot-lft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.bot-rgt{
+    width: 50%;
+    height: 100%;
+    display: grid;
+    justify-items: end;
+}
+.bot-lft .icon{
+    width: 30%;
+    height: 60%;
+    margin: 5vh;
+}
+.icon>img{
+    height: 100%;
+    width: 100%;
+}
+.bot-lft .desc{
+    width: 50%;
+    height: 40%;
+    margin: 8vh 2vh;
+}
+.desc>p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.bot-rgt .hum{
+    width: 50%;
+    height: 60%;
+    align-self: end;
+    margin-right: 10vh;
+}
+.hum>p{
+    margin-top: 4vh;
+    font-size: 23px;
+    text-align: center;
+}
+.bot-rgt .speed{
+    width: 70%;
+    height: 60%;
+    margin-right: 5vh;
+}
+.speed>p{
+    margin-top: 3vh;
+    font-size: 23px;
+    text-align: center;
+}
+footer{
+    height: 12vh;
+    width: 100%;
+    background-color: black;
+}
+footer nav{
+    display: flex;
+    gap: 5vh;
+    font-size: 25px;
+    padding: 2vh 20vh;
+}
+footer nav a{
+    text-decoration: none;
+    color: white;
+}
+footer nav p{
+    color: white;
+}

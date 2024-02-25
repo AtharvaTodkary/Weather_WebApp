@@ -9,9 +9,10 @@
 </head>
 <body onload="getLocation()">
 
-    <!-- <div id="preloader">
-        <img src="./images/loader.gif" alt="">
-    </div> -->
+    <div id="preloader" style="display: block;">
+        <img src="./images/loader.gif" alt="loading..." height="120">
+        <p class="loading">loading...</p>
+    </div>
 
     <header>
         <nav>
@@ -65,7 +66,11 @@
         </nav>
     </footer>
 
-    
+    <script>
+        setTimeout(()=>{
+            $("#preloader").css({"display":"none"})
+        },5000)
+    </script>
     <script src="./index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>

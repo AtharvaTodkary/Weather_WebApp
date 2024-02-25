@@ -26,7 +26,7 @@ header nav h2{
     background: linear-gradient(to left, #a2a8e9 20%, #d37676);
 }
 .main .card{
-    border: 5px solid black;
+    border: 2px solid black;
     height: 87%;
     width: 63%;
     align-self: center;

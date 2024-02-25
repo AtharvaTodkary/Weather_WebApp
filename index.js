@@ -28,7 +28,7 @@ function getWeatherByLocation(position) {
             <p>Humidity: ${data.main.humidity}%</p>
             <p>Wind Speed: ${data.wind.speed} m/s</p>
         `;
-        console.log(weatherInfo);
+        // console.log(weatherInfo);
         $(".city").html(`<p>${data.name}</p>`)
         $(".temp").html(`<p>${data.main.temp}°C</p>`)
         $(".icon").html(`<img src="./icons/${data.weather[0].description}.png" alt="${data.weather[0].description}" />`)
@@ -41,7 +41,13 @@ function getWeatherByLocation(position) {
     })
     .catch(error => {
         console.error('Error:', error);
-        $("#weather-info").html("An error occurred. Please try again later.");
+        $("#weather-info").html("<p>An error occurred. Please try again later.</p>");
     });
 }
 
+// function loaderAnimation(){
+    
+//     $(window).on("load",()=>{
+//         $("#preloader").css({"display":"none"})
+//     });
+// }

@@ -237,3 +237,16 @@ footer nav p{
         margin: 5vh 5vh;
     }
 }
+
+#preloader{
+    background: #f0d653;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#preloader img{
+    width: 30vh;
+    mix-blend-mode: multiply;
+    margin: 30vh 42%;
+}
